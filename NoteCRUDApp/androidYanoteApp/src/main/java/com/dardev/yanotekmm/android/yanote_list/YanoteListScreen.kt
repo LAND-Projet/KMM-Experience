@@ -28,7 +28,7 @@ import androidx.navigation.NavController
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun NoteListScreen(
+fun YanoteListScreen(
     navController: NavController,
     viewModel: YanoteListViewModel = hiltViewModel()
 ) {

@@ -1,4 +1,7 @@
 package com.dardev.yanotekmm.android
 
-class YanoteApp {
-}
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class YanoteApp: Application()

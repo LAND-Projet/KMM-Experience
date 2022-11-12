@@ -7,7 +7,7 @@ import com.dardev.yanotekmm.domain.yanote.YanoteDataSource
 
 class SqlDelightYanoteDataSource(db: YanoteDatabase): YanoteDataSource {
 
-    private val queries = db.noteQueries
+    private val queries = db.yanoteQueries
 
     override suspend fun insertYanote(yanote: Yanote) {
         queries.insertYanote(
