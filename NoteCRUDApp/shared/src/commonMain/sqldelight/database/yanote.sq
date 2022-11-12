@@ -1,0 +1,30 @@
+CREATE TABLE yanoteEntity(
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    content TEXT NOT NULL,
+    colorHex INTEGER NOT NULL,
+    created INTEGER NOT NULL
+);
+
+getAllYanotes:
+SELECT *
+FROM yanoteEntity;
+
+getYanoteById:
+SELECT *
+FROM yanoteEntity
+WHERE id = ?;
+
+insertYanote:
+INSERT OR REPLACE
+INTO yanoteEntity(
+    id,
+    title,
+    content,
+    colorHex,
+    created
+) VALUES ( ?, ?, ?, ?, ?);
+
+deleteYanoteById:
+DELETE FROM yanoteEntity
+WHERE id = ?;
