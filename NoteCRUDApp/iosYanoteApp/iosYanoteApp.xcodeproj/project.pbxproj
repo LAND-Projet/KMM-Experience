@@ -11,6 +11,13 @@
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		950AB897291F31EA0084E5B7 /* YanoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950AB896291F31EA0084E5B7 /* YanoteListViewModel.swift */; };
+		950AB899291F32130084E5B7 /* YanoteListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950AB898291F32130084E5B7 /* YanoteListScreen.swift */; };
+		950AB89B291F35F50084E5B7 /* HideableSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950AB89A291F35F50084E5B7 /* HideableSearchTextField.swift */; };
+		950AB89D291F39190084E5B7 /* YanoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950AB89C291F39190084E5B7 /* YanoteItem.swift */; };
+		950AB89F291F3B280084E5B7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950AB89E291F3B280084E5B7 /* Colors.swift */; };
+		950AB8A1291F3B630084E5B7 /* YanoteDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950AB8A0291F3B630084E5B7 /* YanoteDetailScreen.swift */; };
+		950AB8A3291F3B760084E5B7 /* YanoteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950AB8A2291F3B760084E5B7 /* YanoteDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +40,13 @@
 		7555FF7B242A565900829871 /* iosYanoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosYanoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		950AB896291F31EA0084E5B7 /* YanoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanoteListViewModel.swift; sourceTree = "<group>"; };
+		950AB898291F32130084E5B7 /* YanoteListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanoteListScreen.swift; sourceTree = "<group>"; };
+		950AB89A291F35F50084E5B7 /* HideableSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideableSearchTextField.swift; sourceTree = "<group>"; };
+		950AB89C291F39190084E5B7 /* YanoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanoteItem.swift; sourceTree = "<group>"; };
+		950AB89E291F3B280084E5B7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		950AB8A0291F3B630084E5B7 /* YanoteDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanoteDetailScreen.swift; sourceTree = "<group>"; };
+		950AB8A2291F3B760084E5B7 /* YanoteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanoteDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +88,14 @@
 		7555FF7D242A565900829871 /* iosYanoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				950AB895291F31B30084E5B7 /* yanote_detail */,
+				950AB894291F319B0084E5B7 /* yanote_list */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
+				950AB89E291F3B280084E5B7 /* Colors.swift */,
 			);
 			path = iosYanoteApp;
 			sourceTree = "<group>";
@@ -88,6 +105,26 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		950AB894291F319B0084E5B7 /* yanote_list */ = {
+			isa = PBXGroup;
+			children = (
+				950AB896291F31EA0084E5B7 /* YanoteListViewModel.swift */,
+				950AB898291F32130084E5B7 /* YanoteListScreen.swift */,
+				950AB89A291F35F50084E5B7 /* HideableSearchTextField.swift */,
+				950AB89C291F39190084E5B7 /* YanoteItem.swift */,
+			);
+			path = yanote_list;
+			sourceTree = "<group>";
+		};
+		950AB895291F31B30084E5B7 /* yanote_detail */ = {
+			isa = PBXGroup;
+			children = (
+				950AB8A0291F3B630084E5B7 /* YanoteDetailScreen.swift */,
+				950AB8A2291F3B760084E5B7 /* YanoteDetailViewModel.swift */,
+			);
+			path = yanote_detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,8 +219,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950AB897291F31EA0084E5B7 /* YanoteListViewModel.swift in Sources */,
+				950AB899291F32130084E5B7 /* YanoteListScreen.swift in Sources */,
+				950AB89D291F39190084E5B7 /* YanoteItem.swift in Sources */,
+				950AB89F291F3B280084E5B7 /* Colors.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				950AB8A1291F3B630084E5B7 /* YanoteDetailScreen.swift in Sources */,
+				950AB89B291F35F50084E5B7 /* HideableSearchTextField.swift in Sources */,
+				950AB8A3291F3B760084E5B7 /* YanoteDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
